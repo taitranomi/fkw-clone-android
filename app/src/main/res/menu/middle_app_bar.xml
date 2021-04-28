@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuStart"
+        android:title="@string/menu_start"/>
+
+    <item
+        android:id="@+id/menuFreshWaterFish"
+        android:title="@string/fresh_water_fish"/>
+
+    <item
+        android:id="@+id/menuSaltWaterFish"
+        android:title="@string/salt_water_fish"/>
+
+    <item
+        android:id="@+id/menuKeeping"
+        android:title="@string/keeping_breeding"/>
+
+    <item
+        android:id="@+id/menuAquarium"
+        android:title="@string/aquarium"/>
+
+    <item
+        android:id="@+id/menuBook"
+        android:title="@string/book"/>
+
+    <item
+        android:id="@+id/menuBlog"
+        android:title="@string/blog"/>
+
+    <item
+        android:id="@+id/menuFb"
+        android:title="@string/fb_group"/>
+</menu>

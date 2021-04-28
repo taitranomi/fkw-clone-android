@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:contentDescription="image"
+            android:src="@drawable/home_fkw_img" />
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true">
+
+                        <com.google.android.material.appbar.AppBarLayout
+                            android:id="@+id/middleAppBarLayout"
+                            android:layout_height="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/colorPrimary"
+                            android:fitsSystemWindows="true">
+
+                                <com.google.android.material.appbar.MaterialToolbar
+                                    android:id="@+id/middleAppBar"
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    app:navigationIcon="@drawable/ic_menu"/>
+
+                        </com.google.android.material.appbar.AppBarLayout>
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/middleNavigation"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    app:menu="@menu/middle_app_bar"/>
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

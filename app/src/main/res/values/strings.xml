@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fish Keeping World</string>
+    <string name="menu_start">Start Here</string>
+    <string name="fresh_water_fish">Fresh Water Fish</string>
+    <string name="salt_water_fish">Salt Water Fish</string>
+    <string name="keeping_breeding">Keeping &amp; Breeding</string>
+    <string name="aquarium">Aquarium</string>
+    <string name="book">Book</string>
+    <string name="blog">Blog</string>
+    <string name="fb_group">Free FB Group</string>
+</resources>
