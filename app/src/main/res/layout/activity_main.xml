@@ -16,36 +16,39 @@
             android:src="@drawable/home_fkw_img" />
 
         <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/dl"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fitsSystemWindows="true">
+            tools:openDrawer="start">
 
                 <androidx.coordinatorlayout.widget.CoordinatorLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fitsSystemWindows="true">
+                    android:layout_height="match_parent">
 
                         <com.google.android.material.appbar.AppBarLayout
                             android:id="@+id/middleAppBarLayout"
                             android:layout_height="50dp"
                             android:layout_width="match_parent"
-                            android:layout_marginTop="15dp"
-                            android:background="@color/colorPrimary"
-                            android:fitsSystemWindows="true">
+                            android:layout_marginTop="5dp"
+                            android:background="@color/colorPrimary">
 
                                 <com.google.android.material.appbar.MaterialToolbar
                                     android:id="@+id/middleAppBar"
                                     android:layout_width="50dp"
                                     android:layout_height="match_parent"
-                                    app:navigationIcon="@drawable/ic_menu"/>
+                                    app:navigationIcon="@drawable/ic_menu"
+                                    app:menu="@menu/middle_app_bar"/>
 
                         </com.google.android.material.appbar.AppBarLayout>
                 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
                 <com.google.android.material.navigation.NavigationView
                     android:id="@+id/middleNavigation"
-                    android:layout_width="50dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@color/colorPrimary"
+                    app:itemTextColor="@android:color/white"
                     app:menu="@menu/middle_app_bar"/>
         </androidx.drawerlayout.widget.DrawerLayout>
 
