@@ -1,10 +1,11 @@
-package com.example.fishkeepingworld
+package com.example.fishkeepingworld.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.example.fishkeepingworld.R
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
